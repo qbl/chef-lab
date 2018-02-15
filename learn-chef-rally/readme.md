@@ -14,15 +14,15 @@ There are several alternatives to run Chef.
 2. Launch an Ubuntu Container
 
    First, create a new directory that will be our main working directory.   
-     
    `mkdir learn-chef`  
-   `cd learn-chef`
-
-3. Pull a docker image with Ubuntu operating system installed.  
-   
+   `cd learn-chef`  
+     
+   Pull a docker image with Ubuntu operating system installed.  
+     
    `docker pull ubuntu`  
-   
-4. Once the image is ready, launch a container from that image.  
-
+     
+   Once the image is ready, launch a container from that image.  
+     
    `docker run -it -v $(pwd):/root/chef-repo -p 8100:80 ubuntu /bin/bash`
 
+5. 
