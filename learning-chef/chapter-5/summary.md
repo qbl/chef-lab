@@ -76,7 +76,7 @@ platforms:
   - name: ubuntu-16.04
 ```
 
-## Inside `kitchen.yml` File
+## Inside 'kitchen.yml' File
 
 A `kitchen.yml` file contains four main section:
 
