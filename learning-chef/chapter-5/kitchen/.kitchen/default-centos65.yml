@@ -1,0 +1,7 @@
+---
+hostname: 127.0.0.1
+port: '2201'
+username: vagrant
+ssh_key: "/Users/iqbalfarabi/Documents/Workspace/src/chef-lab/learning-chef/chapter-5/kitchen/.kitchen/kitchen-vagrant/default-centos65/.vagrant/machines/default/virtualbox/private_key"
+last_action: create
+last_error: 
