@@ -54,6 +54,18 @@ Chef automatically and auotomously replace 'Modified outside of chef-apply' that
 
 ## To Uninstall, Specify What Not to Do
 
-Is it possible for Chef to automatically uninstall everything it installs? Not quite. However, we can perform the equivallent of uninstallation by telling CHef explicitly what not to do.
+Is it possible for Chef to automatically uninstall everything it installs? Not quite. However, we can perform the equivallent of uninstallation by telling CHef explicitly what not to do. For example, we will write a new recipe called `cleanup.rb`. In this recipe we will define that file `hello.txt` should not exist.
 
+```
+file 'hello.txt' do
+  action :delete
+end
+```
 
+When we run `chef-apply cleanup.rb`, we should see a result similar to this:
+
+```
+Recipe: (chef-apply cookbook)::(chef-apply recipe)
+  * file[hello.txt] action delete
+    - delete file hello.txt
+```
